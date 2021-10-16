@@ -33,7 +33,7 @@
     background: #57a958;
     color: white;
     padding: 8px;
-    border: 0;
+    border: none;
 }
 
 .btn:hover {
