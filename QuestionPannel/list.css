@@ -66,3 +66,6 @@
   a.button:hover{
     background-color: rgb(25, 184, 25);
   }
+  img{
+      border-radius: 50%;
+  }
