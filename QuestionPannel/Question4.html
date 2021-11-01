@@ -10,49 +10,75 @@
 </head>
 
 <body>
-    <div class="Problem">
-        <h2>Problem</h2>
-        <br>
-        <p>Karan likes the number 4 very much.
+    <div class="Question">
+        <div class="Problem">
+            <h2>Problem</h2>
+            <br>
+            <p>Karan likes the number 4 very much.
 
-            Impressed by the power of this number, Karan has begun to look for occurrences of four anywhere. He has a
-            list of T integers, for each of them he wants to calculate the number of occurrences of the digit 4 in the
-            decimal representation. He is too busy now, so please help him.</p>
-    </div>
-    <div class="Input">
-        
-        <h2>Input Format</h2>
-        <br>
-        <p>The first line of input consists of a single integer T, denoting the number of integers in Karan's list.
+                Impressed by the power of this number, Karan has begun to look for occurrences of four anywhere. He has a
+                list of T integers, for each of them he wants to calculate the number of occurrences of the digit 4 in the
+                decimal representation. He is too busy now, so please help him.</p>
+        </div>
+        <div class="Input">
+            
+            <h2>Input Format</h2>
+            <br>
+            <p>The first line of input consists of a single integer T, denoting the number of integers in Karan's list.
 
-            Then, there are T lines, each of them contain a single integer from the list..</p>
-    </div>
-    <div class="Output">
-        <h2>Output</h2>
-        <br>
-        <pre>
-            Output T lines. Each of these lines should contain the number of occurrences of the digit 4 in the 
-            respective integer from Karan's list.
+                Then, there are T lines, each of them contain a single integer from the list..</p>
+        </div>
+        <div class="Output">
+            <h2>Output</h2>
+            <br>
+            <p>
+                Output T lines. Each of these lines should contain the number of occurrences of the digit 4 in the 
+                respective integer from Karan's list.
+            </p>
+        </div>
+        <div class="Example">
+            <h3>Input:</h3>
+            <pre>
+5
+447474
+228
+6664
+40
+81
+            <h3>Output</h3>
+4
+0
+1
+1
+0
         </pre>
+        </div>
     </div>
-    <div class="Example">
-        <h3>Input:</h3>
-        <pre>
-        <p> 
-        5
-        447474
-        228
-        6664
-        40
-        81</p>
-        <h3>Output</h3>
-        <p>
-        4
-        0
-        1
-        1
-        0</p>
-    </pre>
+
+    <!-- ----------------------------------------------------------------------------- -->
+    <div class="code-editor">
+        <div class="header"> Codera Online IDE </div>
+        <div class="control-panel">
+            Select Language:
+            &nbsp; &nbsp;
+            <select id="languages" class="languages" onchange="changeLanguage()">
+                <option value="c"> C </option>
+                <option value="cpp"> C++ </option>
+                <option value="php"> PHP </option>
+            </select>
+        </div>
+        <div class="editor" id="editor"></div>
+
+        <div class="button-container">
+            <button class="btn" onclick="executeCode()"> Run </button>
+        </div>
+
+        <div class="output"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../codeEditor/ui/js/lib/ace.js"></script>
+        <script src="../codeEditor/ui/js/lib/theme-monokai.js"></script>
+        <script src="../codeEditor/ui/js/ide.js"></script>
     </div>
 
 

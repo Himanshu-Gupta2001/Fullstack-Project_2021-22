@@ -8,23 +8,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="Problem"><h2>Problem</h2>
-    <p>1. You are given a number n.<br>
-        2. You've to create a pattern of * and separated by tab as shown in output format.</p>
+    <div class="Question">
+        <div class="Problem"><h2>Problem</h2>
+        <p>1. You are given a number n.<br>
+            2. You've to create a pattern of * and separated by tab as shown in output format.</p>
+        </div>
+        <div class="Input">
+            <h2>Input Format</h2>
+            <p>A number n</p>
+        </div>
+        <div class="Output">
+            <h2>Output</h2>
+            <pre>
+                *	*	*		*	*	*	
+                *	*				*	*	
+                *						*	
+                *	*				*	*	
+                *	*	*		*	*	*	
+            </pre>
+        </div>
     </div>
-    <div class="Input">
-        <h2>Input Format</h2>
-        <p>A number n</p>
-    </div>
-    <div class="Output">
-        <h2>Output</h2>
-        <pre>
-            *	*	*		*	*	*	
-            *	*				*	*	
-            *						*	
-            *	*				*	*	
-            *	*	*		*	*	*	
-        </pre>
+
+    <!-- ----------------------------------------------------------------------------- -->
+    <div class="code-editor">
+        <div class="header"> Codera Online IDE </div>
+        <div class="control-panel">
+            Select Language:
+            &nbsp; &nbsp;
+            <select id="languages" class="languages" onchange="changeLanguage()">
+                <option value="c"> C </option>
+                <option value="cpp"> C++ </option>
+                <option value="php"> PHP </option>
+            </select>
+        </div>
+        <div class="editor" id="editor"></div>
+
+        <div class="button-container">
+            <button class="btn" onclick="executeCode()"> Run </button>
+        </div>
+
+        <div class="output"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../codeEditor/ui/js/lib/ace.js"></script>
+        <script src="../codeEditor/ui/js/lib/theme-monokai.js"></script>
+        <script src="../codeEditor/ui/js/ide.js"></script>
     </div>
 </body>
 </html>

@@ -10,34 +10,61 @@
 </head>
 
 <body>
-    <div class="Problem">
-        <h2>Problem</h2>
-        <p>Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a
-            multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including
-            bank charges). For each successful withdrawal the bank charges 0.50 $US. Calculate Pooja's account balance
-            after an attempted transaction.</p>
-    </div>
-    <div class="Input">
-        <h2>Input Format</h2>
-        <p>Positive integer 0 < X <=2000 - the amount of cash which Pooja wishes to withdraw.<br>
+    <div class="Question">
+        <div class="Problem">
+            <h2>Problem</h2>
+            <p>Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a
+                multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including
+                bank charges). For each successful withdrawal the bank charges 0.50 $US. Calculate Pooja's account balance
+                after an attempted transaction.</p>
+        </div>
+        <div class="Input">
+            <h2>Input Format</h2>
+            <p>Positive integer 0 < X <=2000 - the amount of cash which Pooja wishes to withdraw.<br>
 
-                Nonnegative number 0<= Y <=2000 with two digits of precision - Pooja's initial account balance.</p>
+                    Nonnegative number 0<= Y <=2000 with two digits of precision - Pooja's initial account balance.</p>
+        </div>
+        <div class="Output">
+            <h2>Output</h2>
+            <p>
+                Output the account balance after the attempted transaction, given as a number with two digits of 
+                precision. If there is not enough money in the account to complete the transaction, output the 
+                current bank balance.
+            </p>
+            </div>
+        <div class="Example">
+                <h3>Input:</h3>
+                <p> 30 120.00</p>
+                <h3>Output</h3>
+                <p>89.50</p>
+        </div>
     </div>
-    <div class="Output">
-        <h2>Output</h2>
-        <pre>
-            Output the account balance after the attempted transaction, given as a number with two digits of 
-            precision. If there is not enough money in the account to complete the transaction, output the 
-            current bank balance.
-        </pre>
-        </div>
-    <div class="Example">
-            <h3>Input:</h3>
-            <p> 30 120.00</p>
-            <h3>Output</h3>
-            <p>89.50</p>
-        </div>
         
+    <!-- ----------------------------------------------------------------------------- -->
+    <div class="code-editor">
+        <div class="header"> Codera Online IDE </div>
+        <div class="control-panel">
+            Select Language:
+            &nbsp; &nbsp;
+            <select id="languages" class="languages" onchange="changeLanguage()">
+                <option value="c"> C </option>
+                <option value="cpp"> C++ </option>
+                <option value="php"> PHP </option>
+            </select>
+        </div>
+        <div class="editor" id="editor"></div>
+
+        <div class="button-container">
+            <button class="btn" onclick="executeCode()"> Run </button>
+        </div>
+
+        <div class="output"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../codeEditor/ui/js/lib/ace.js"></script>
+        <script src="../codeEditor/ui/js/lib/theme-monokai.js"></script>
+        <script src="../codeEditor/ui/js/ide.js"></script>
+    </div>
     
 </body>
 

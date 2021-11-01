@@ -1,3 +1,9 @@
+div.code-editor {
+    width: 50%;
+    float: right;
+    display: inline;
+}
+
 *{margin: 0;}
 
 .header {
