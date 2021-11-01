@@ -1,5 +1,5 @@
 body{
-    background-color: #8e9ebd;
+    /* background-color: #40E0D0; */
     font-family: Arial, Helvetica, sans-serif;
 }
 .sign-up{
@@ -34,19 +34,21 @@ form input{
     border: none;
     border: 1px solid gray;
     outline: none;
+    margin: 5px;
 }
 button{
     width: 316px;
     height: 35px;
     margin-top: 20px;
-    background-color: #49c1a2;
+    background-color: #FA0024;
     color: white;
     border: none;
     font-size: 18px;
     border-radius: 10px;
+    cursor: pointer;
 }
 button:hover{
-    background-color: violet;
+    background: radial-gradient(red, rgb(221, 103, 103));
 }
 
 p{
@@ -91,3 +93,10 @@ h2{
     color: indianred;
 }
 
+img{
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
