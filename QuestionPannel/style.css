@@ -65,7 +65,7 @@ div.Question{
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 5px rgb(114, 110, 110);
-    
+    overflow: scroll;
   }
 }
 
