@@ -1,5 +1,6 @@
 @import url(../codeEditor/ui/css/style.css);
 
+@media (min-width: 820px) {
 div.Question{
   display: inline;
   width: 50%;
@@ -20,14 +21,7 @@ div.Question{
   border-radius: 8px;
   box-shadow: 0 5px rgb(114, 110, 110);
 }
-.Output {
-  margin: 25px 15px;
-  background-color: rgb(255, 251, 251);
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 5px rgb(114, 110, 110);
-  
-}
+
 .Example {
   width: 50%;
   float: left;
@@ -36,4 +30,93 @@ div.Question{
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 5px rgb(114, 110, 110);
+}
+
+}
+
+@media (min-width: 425px){
+
+  .Problem {
+    margin: 20px 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(114, 110, 110);
+  }
+  .Input {
+    margin: 25px 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(114, 110, 110);
+  }
+  
+  .Example {
+    margin: 20px 15px;
+    background-color: rgb(255, 251, 251);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(114, 110, 110);
+  }
+
+  .Output {
+    margin: 25px 15px;
+    background-color: rgb(255, 251, 251);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(114, 110, 110);
+    
+  }
+}
+
+@media (min-width: 141px) and (max-width: 424px){
+  .Problem {
+    margin: 20px 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(114, 110, 110);
+  }
+  .Input {
+    margin: 25px 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(114, 110, 110);
+  }
+  
+  .Example {
+    margin: 20px 15px;
+    background-color: rgb(255, 251, 251);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px rgb(114, 110, 110);
+  } 
+
+  .Output {
+    margin: 25px 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 140px){
+  .Problem {
+    margin: 20px 15px;
+    background-color: #fff;
+    padding: 15px;
+  }
+  .Input {
+    margin: 25px 15px;
+    padding: 15px;
+  }
+  
+  .Example {
+    margin: 20px 15px;
+    padding: 15px;
+  }
+
+  .Output {
+    margin: 25px 15px;
+    padding: 15px;
+  }
 }

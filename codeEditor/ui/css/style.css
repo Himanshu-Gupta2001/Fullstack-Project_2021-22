@@ -1,7 +1,9 @@
-div.code-editor {
-    width: 50%;
-    float: right;
-    display: inline;
+@media (min-width: 820px) {
+    div.code-editor {
+        width: 50%;
+        float: right;
+        display: inline;
+    }
 }
 
 *{margin: 0;}
